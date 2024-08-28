@@ -1,12 +1,12 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { projects } from "../data/projects";
-import { FaArrowRight, FaReact } from "react-icons/fa";
-import { RiTailwindCssFill } from "react-icons/ri";
+import { FaArrowRight } from "react-icons/fa";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
 
 const techIcons: { [key: string]: React.ReactNode } = {
-  "Next.js": <FaReact />,
+  "Next.js": <RiNextjsFill />,
   TypeScript: <SiTypescript />,
   "Tailwind CSS": <RiTailwindCssFill />,
 };
@@ -26,13 +26,13 @@ const ProjectDetail: React.FC = () => {
   }
 
   return (
-    <div className="px-16 py-8 text-gray-900 min-h-screen">
+    <div className="px-16 py-8 text-gray-900 bg-gray-200 min-h-screen">
       <h1 className="text-4xl font-bold mb-8">{project.name}</h1>
       <div className="flex items-center gap-x-12">
         <img
           src={`/images/projects/${project.image}`}
           alt={project.name}
-          className="w-full h-72 object-cover"
+          className="w-full h-72 object-cover rounded-md"
         />
         <div className="flex flex-col gap-y-8">
           <p className="text-lg">{project.description}</p>
@@ -46,7 +46,7 @@ const ProjectDetail: React.FC = () => {
           </div>
           <Link
             to={project.link}
-            className="text-blue-400 flex items-center"
+            className="text-blue-500 flex items-center"
             target="_blank"
             rel="noopener noreferrer"
           >

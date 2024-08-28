@@ -7,7 +7,7 @@ import ProjectDetail from "./pages/ProjectDetail";
 const App: React.FC = () => {
   return (
     <Router>
-      <nav className="bg-gray-900 px-16 py-4 flex justify-between items-center">
+      <nav className="bg-gray-900 px-16 py-6 flex justify-between items-center">
         <img src="/images/logo.png" alt="Logo" className="h-6 mr-4" />
         <nav className="flex space-x-8">
           <Link to="/" className="text-white text-lg">

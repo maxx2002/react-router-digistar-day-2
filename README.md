@@ -1,3 +1,8 @@
+# Simple portfolio website
+
+<img width="1440" alt="Screenshot 2024-09-03 at 13 28 04" src="https://github.com/user-attachments/assets/e5fd8031-b2ff-465f-9820-42c9d308fbf5">
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
